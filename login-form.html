@@ -72,8 +72,7 @@
                 <i class="fa fa-bars"></i>
             </a>
             <!-------------- SEARCH BUTTON -------------->
-            <button onclick="searchShow('searchID')" class="w3-button w3-hover-theme w3-padding-16 w3-right"
-                style="margin-left:10px;">
+            <button onclick="searchShow('searchID')" class="w3-button w3-hover-theme w3-padding-16 w3-right">
                 <i class="fa fa-search"></i>
             </button>
             <!----------- Account ----------->
@@ -89,6 +88,22 @@
                 </div>
             </div>
         </div>
+        <!------------------- SEARCH FORM ------------------->
+        <div class="w3-sidebar w3-bar w3-card-4 w3-hide w3-animate-zoom" id="searchID">
+            <div class="search-title w3-section">
+                <h3 class="front-pink-2">Sadrzaj koji trazite</h3>
+            </div>
+            <form class="search-form" method="" action="">
+                <p><input class="w3-input w3-border w3-light-grey" type="text" autofocus></p>
+                <p class="w3-display-container">
+                    <button class="w3-button w3-margin-bottom bg-pink-1 front-green-3">Traži</button>
+                    <a href="javascript:void(0)" onclick="searchShow('searchID')"
+                        class="w3-right w3-xlarge w3-padding-large w3-border front-pink-2" title="Close">
+                        <i class="fa fa-times"></i>
+                    </a>
+                </p>
+            </form>
+        </div><!-- Search form -->
     </div><!-- id="nav-bar" -->
 
     <!----------------Sidebar overlay effect ---------------->
