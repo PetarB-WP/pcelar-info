@@ -163,12 +163,70 @@
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  .logo-picture {
+    padding-left: 16px;
+  }
+
+  .nav-bar {
+    padding: 0 16px;
+  }
+
+  /* Search form */
+  #search {
+    padding: 16px 16px;
+  }
+  #search form p input {
+    width: 100%;
+  }
+  #search form .form-buttons {
+    flex-direction: column;
+  }
+  #search form .form-buttons div {
+    width: 100%;
+  }
+  #search form .form-buttons div button {
+    width: 100%;
+  }
+
+  /* Image Slider */
+  #sliderStatus {
+    bottom: 100px;
+  }
+
+  .slides-text, .nav-buttons {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
   .hide-medium {
     display: none;
   }
 
+  /* Content */
   .content {
     flex-direction: column;
+    padding: 0 16px;
+  }
+  .content .content-1 {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+  }
+  .content .content-2 {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding-left: 0;
+  }
+
+  /* all posts */
+  .post-content {
+    flex-direction: column;
+  }
+
+  /* content-2 (sidebar) */
+  .content-2 .row > div {
+    padding-left: 0;
   }
 
   .single-post .w3-bar .w3-button {
@@ -186,14 +244,14 @@
     margin-left: 0;
   }
 
-  /* all posts */
-  .post-content {
-    flex-direction: column;
+  /* after content */
+  .after-content {
+    padding: 0 16px;
   }
 
-  /* after content -> trendy */
   .trendy .post {
     flex: 100%;
+    padding: 16px 0;
   }
 
   /* form - sirina kolone za formu (login, register, lost password ) */
@@ -202,18 +260,83 @@
   }
 
   /* footer */
+  .footer {
+    padding: 0 16px;
+  }
+  .footer .footer-row-2 {
+    padding-top: 0;
+    padding-bottom: 32px;
+  }
+
   .footer-row .footer-col {
     flex: 100%;
+    padding: 0;
+    margin-bottom: 32px;
   }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 601px) and (max-width: 767px) {
+  .logo-picture {
+    padding-left: 32px;
+  }
+
+  .nav-bar {
+    padding: 0 32px;
+  }
+
+  /* Search form */
+  #search {
+    padding: 16px 32px;
+  }
+  #search form p input {
+    width: 50%;
+  }
+  #search form .form-buttons div {
+    width: 50%;
+  }
+  #search form .form-buttons div button {
+    width: 50%;
+  }
+
+  /* Image Sliders */
+  #sliderStatus {
+    bottom: 16px;
+  }
+
+  .slides-text, .nav-buttons {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
   .hide-medium {
     display: none;
   }
 
+  /* Content */
   .content {
     flex-direction: column;
+    padding: 0 32px;
+  }
+  .content .content-1 {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+  }
+  .content .content-2 {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding-left: 0;
+  }
+
+  /* all posts */
+  .post-content {
+    flex-direction: column;
+  }
+
+  /* content-2 (sidebar) */
+  .content-2 .row > div {
+    padding-left: 0;
   }
 
   .comment-form .w3-row .fa-pencil-alt, .comment-form .w3-row .fa-user {
@@ -226,14 +349,14 @@
     margin-left: 0;
   }
 
-  /* all posts */
-  .post-content {
-    flex-direction: column;
+  /* after content */
+  .after-content {
+    padding: 0 32px;
   }
 
-  /* after content -> trendy */
   .trendy .post {
     flex: 100%;
+    padding: 16px 0;
   }
 
   /* form - sirina kolone za formu (login, register, lost password ) */
@@ -242,19 +365,62 @@
   }
 
   /* footer */
+  .footer {
+    padding: 0 32px;
+  }
+  .footer .footer-row-2 {
+    padding-top: 0;
+    padding-bottom: 32px;
+  }
+
   .footer-row .footer-col {
     flex: 100%;
+    padding: 0;
     margin-bottom: 32px;
   }
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .logo-picture {
+    padding-left: 32px;
+  }
+
+  .nav-bar {
+    padding: 0 32px;
+  }
+
+  /* Search form */
+  #search {
+    padding: 16px 32px;
+  }
+  #search form p input {
+    width: 50%;
+  }
+  #search form .form-buttons div {
+    width: 50%;
+  }
+  #search form .form-buttons div button {
+    width: 50%;
+  }
+
+  /* Image Sliders */
+  #sliderStatus {
+    bottom: 16px;
+  }
+
+  .slides-text, .nav-buttons {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
   .hide-medium {
     display: none;
   }
 
+  /* Content */
   .content {
     flex-direction: row;
+    padding: 0 32px;
   }
   .content .content-1 {
     -webkit-flex: 3;
@@ -265,6 +431,16 @@
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
+    padding-left: 16px;
+  }
+
+  /* all posts */
+  .post-content {
+    flex-direction: column;
+  }
+
+  /* content-2 (sidebar) */
+  .content-2 .row > div {
     padding-left: 16px;
   }
 
@@ -278,14 +454,14 @@
     margin-left: 50px;
   }
 
-  /* all posts */
-  .post-content {
-    flex-direction: column;
+  /* after content */
+  .after-content {
+    padding: 0 32px;
   }
 
-  /* after content -> trendy */
   .trendy .post {
-    flex: 50%;
+    flex: 100%;
+    padding: 16px 0;
   }
 
   /* form - sirina kolone za formu (login, register, lost password ) */
@@ -294,27 +470,66 @@
   }
 
   /* footer */
+  .footer {
+    padding: 0 32px;
+  }
+  .footer .footer-row-2 {
+    padding-top: 0;
+    padding-bottom: 32px;
+  }
+
   .footer-row .footer-col {
     flex: 50%;
+    padding: 0 16px;
+    margin-bottom: 32px;
   }
 
   .footer-row-2 .col-1 {
     text-align: center;
   }
-
-  /* Search form */
-  #searchID form p input {
-    width: 70%;
-  }
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .logo-picture {
+    padding-left: 64px;
+  }
+
+  .nav-bar {
+    padding: 0 64px;
+  }
+
+  /* Search form */
+  #search {
+    padding: 16px 64px;
+  }
+  #search form p input {
+    width: 33%;
+  }
+  #search form .form-buttons div {
+    width: 50%;
+  }
+  #search form .form-buttons div button {
+    width: 33%;
+  }
+
+  /* Image Sliders */
+  #sliderStatus {
+    bottom: 16px;
+  }
+
+  .slides-text, .nav-buttons {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+
   .hide-medium {
     display: none;
   }
 
+  /* Content */
   .content {
     flex-direction: row;
+    padding: 0 64px;
   }
   .content .content-1 {
     -webkit-flex: 3;
@@ -328,13 +543,6 @@
     padding-left: 16px;
   }
 
-  .comment-form .w3-row .name-field, .comment-form .w3-row .content-field {
-    width: 90%;
-  }
-  .comment-form button {
-    margin-left: 50px;
-  }
-
   /* all posts */
   .post-content {
     flex-direction: row;
@@ -346,9 +554,26 @@
     flex-grow: 2;
   }
 
-  /* after content -> trendy */
+  /* content-2 (sidebar) */
+  .content-2 .row > div {
+    padding-left: 16px;
+  }
+
+  .comment-form .w3-row .name-field, .comment-form .w3-row .content-field {
+    width: 90%;
+  }
+  .comment-form button {
+    margin-left: 50px;
+  }
+
+  /* after content */
+  .after-content {
+    padding: 0 64px;
+  }
+
   .trendy .post {
     flex: 25%;
+    padding: 16px;
   }
 
   /* form - sirina kolone za formu (login, register, lost password ) */
@@ -357,31 +582,69 @@
   }
 
   /* footer */
+  .footer {
+    padding: 0 64px;
+  }
+  .footer .footer-row-2 {
+    padding-top: 48px;
+    padding-bottom: 32px;
+  }
+
   .footer-row .footer-col {
     flex: 25%;
+    padding: 0 16px;
   }
 
   .footer-row-2 .col-1 {
     text-align: center;
   }
-
-  /* Search form */
-  #searchID form p input {
-    width: 33%;
-  }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  .bars-mark {
-    display: none;
+  .logo-picture {
+    padding-left: 64px;
+  }
+
+  .nav-bar {
+    padding: 0 64px;
+  }
+
+  /* Search form */
+  #search {
+    padding: 16px 64px;
+  }
+  #search form p input {
+    width: 33%;
+  }
+  #search form .form-buttons div {
+    width: 50%;
+  }
+  #search form .form-buttons div button {
+    width: 33%;
+  }
+
+  /* Image Sliders */
+  #sliderStatus {
+    bottom: 16px;
+  }
+
+  .slides-text, .nav-buttons {
+    padding-left: 64px;
+    padding-right: 64px;
   }
 
   .slides-text {
     width: 50%;
   }
 
+  .bars-mark {
+    display: none;
+  }
+
+  /* Content */
   .content {
     flex-direction: row;
+    padding: 0 64px;
   }
   .content .content-1 {
     -webkit-flex: 3;
@@ -395,13 +658,6 @@
     padding-left: 16px;
   }
 
-  .comment-form .w3-row .name-field, .comment-form .w3-row .content-field {
-    width: 90%;
-  }
-  .comment-form button {
-    margin-left: 50px;
-  }
-
   /* all posts */
   .post-content {
     flex-direction: row;
@@ -413,9 +669,26 @@
     flex-grow: 2;
   }
 
-  /* after content -> trendy */
+  /* content-2 (sidebar) */
+  .content-2 .row > div {
+    padding-left: 16px;
+  }
+
+  .comment-form .w3-row .name-field, .comment-form .w3-row .content-field {
+    width: 90%;
+  }
+  .comment-form button {
+    margin-left: 50px;
+  }
+
+  /* after content */
+  .after-content {
+    padding: 0 64px;
+  }
+
   .trendy .post {
     flex: 25%;
+    padding: 16px;
   }
 
   /* form - sirina kolone za formu (login, register, lost password ) */
@@ -424,27 +697,29 @@
   }
 
   /* footer */
+  .footer {
+    padding: 0 64px;
+  }
+  .footer .footer-row-2 {
+    padding-top: 48px;
+    padding-bottom: 32px;
+  }
+
   .footer-row .footer-col {
     flex: 25%;
+    padding: 0 16px;
   }
 
   .footer-row-2 .col-1 {
     text-align: center;
   }
-
-  /* Search form */
-  #searchID form p input {
-    width: 33%;
-  }
 }
 /*----------------- Nav Bar -----------------*/
-#nav-bar {
+#navBar {
   position: sticky;
-  /*padding: 0 $padding*4;*/
   z-index: 6;
 }
-#nav-bar .nav-bar {
-  margin: 0 64px;
+#navBar .nav-bar {
   width: auto !important;
 }
 
@@ -454,15 +729,22 @@
 }
 
 #sideBar {
-  position: absolute;
-  top: 225px;
-  height: 100%;
+  position: sticky;
+  top: 59px;
+  height: 0px;
   width: 200px;
+  opacity: 0;
   background-color: #fff;
   overflow: auto;
   z-index: 5;
-  /* position: fixed!important; */
-  /* w3-sidebar */
+  transition: transform 1s, height 500ms, opacity 500ms;
+  transform: translateX(-100%);
+}
+
+.sidebar-show {
+  transform: translateX(0) !important;
+  height: 340px !important;
+  opacity: 1 !important;
 }
 
 .breadcrumbs {
@@ -487,6 +769,14 @@
   text-decoration: underline;
 }
 
+.logo-picture {
+  display: flex;
+  align-items: center;
+  height: 150px;
+}
+.logo-picture .logo {
+  color: black;
+}
 .logo-picture span {
   padding: 8px;
 }
@@ -573,9 +863,6 @@
   padding-left: 16px;
   margin: 0;
 }
-.row-1 .new-comments {
-  padding-left: 16px;
-}
 .row-1 .new-comments .comment h6 {
   border-bottom: 1px solid #263409;
   margin-bottom: 0;
@@ -595,9 +882,6 @@
   padding-left: 16px;
   margin: 0;
 }
-.row-2 .categories {
-  padding-left: 16px;
-}
 .row-2 .categories ul li a {
   color: #263409;
 }
@@ -609,9 +893,6 @@
 .row-3 h4 {
   padding-left: 16px;
   margin: 0;
-}
-.row-3 .most-read {
-  padding-left: 16px;
 }
 .row-3 .most-read h6 {
   margin-bottom: 0;
@@ -641,7 +922,6 @@
   margin: 0;
 }
 .row-4 .archive {
-  padding-left: 16px;
   padding-bottom: 16px;
 }
 .row-4 .archive ul {
@@ -670,8 +950,6 @@
 }
 .trendy .post {
   /* border: 1px solid blueviolet;*/
-  padding: 16px;
-  /* flex: 25%; */
 }
 .trendy .post .post-header-trendy h3 {
   margin-bottom: 0;
@@ -692,7 +970,6 @@
 }
 
 .footer {
-  padding: 48px 64px 32px;
   background-color: #98CA32;
 }
 .footer .footer-row-1 {
@@ -700,9 +977,7 @@
   display: -webkit-flex;
   flex-wrap: wrap;
   flex-direction: row;
-}
-.footer .footer-row-1 .footer-col {
-  /*border: 1px solid red;*/
+  padding-top: 48px;
 }
 .footer .footer-row-1 .footer-col .footer-button {
   border: 2px solid #263409 !important;
@@ -727,12 +1002,6 @@
 }
 .footer .social-net a .fab:hover {
   color: #618a0f;
-}
-.footer .footer-row-2 {
-  padding-top: 48px;
-}
-.footer .footer-row-2 .col-1 {
-  /*border: 1px solid green;*/
 }
 
 .login {
@@ -786,28 +1055,32 @@
   background-color: #abe930 !important;
 }
 
-#searchID {
+#search {
   position: sticky !important;
   width: 100%;
-  padding: 0 64px;
 }
-#searchID .search-title h3 {
+#search .search-title {
+  margin-bottom: 16px;
+}
+#search .search-title h3 {
   margin: 0;
 }
-#searchID form p {
-  width: 100%;
+#search form .form-buttons {
+  display: flex;
 }
-#searchID form p button:hover {
+#search form .form-buttons div button:hover {
   background-color: #D61A46 !important;
   color: white !important;
 }
-#searchID form p a:hover {
+#search form .form-buttons div a:hover {
   background-color: gray !important;
   color: white !important;
 }
 
 * {
   box-sizing: border-box;
+  transition: background-color 600ms, color 300ms, opacity 500ms;
+  letter-spacing: 0.7px;
 }
 
 html {
@@ -825,6 +1098,11 @@ body {
 
 a {
   text-decoration: none;
+  outline: none;
+}
+
+input, button {
+  outline: none;
 }
 
 .overlay-frame1 {
@@ -835,26 +1113,14 @@ a {
   background-color: rgba(102, 102, 102, 0.5);
 }
 
-.logo-picture {
-  /*border: 1px solid black;*/
-  width: 100%;
-  height: 150px;
-  padding: 16px;
-  margin-bottom: 16px;
-}
-.logo-picture .logo {
-  color: black;
-}
-
 .before-content {
   width: 100%;
-  padding: 16px 0;
+  padding: 0 0 16px 0;
   margin-bottom: 16px;
 }
 
 .after-content {
   width: 100%;
-  padding: 0 64px;
   margin-bottom: 16px;
 }
 
@@ -862,22 +1128,7 @@ a {
   display: flex;
   display: -webkit-flex;
   flex-wrap: nowrap;
-  padding: 0 64px;
   margin-bottom: 16px;
-}
-.content .content-1 {
-  /*border: 1px solid red;*/
-  /*flex-grow: 8;*/
-}
-.content .content-2 {
-  /*border: 1px solid blue;*/
-  /*padding-left: $padding;*/
-}
-.content .content-2 .row-1,
-.content .content-2 .row-2,
-.content .content-2 .row-3,
-.content .content-2 .row-4 {
-  /*border: 1px solid #e4f12f;*/
 }
 
 .footer {

@@ -4,8 +4,7 @@
 #sliderStatus {
     visibility: hidden;
     min-width: 250px;
-    margin-left: -125px;
-    background: rgba(161, 112, 0, 0.5); /* d5 */
+    background: rgba(161, 112, 0, 0.8); /* d5 */
     color: #fff;
     text-align: center;
     border-radius: 2px;
@@ -14,33 +13,15 @@
     z-index: 10;
     font-size: 17px;
     left: 20%;
-    bottom: 12px;
+    /* bottom: 16px; */
+    transition: all 1s;
+    transform: translateY(16px);
+    opacity: 0.0;
   }
   #sliderStatus.show {
     visibility: visible;
-    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-    animation: fadein 0.5s, fadeout 0.5s 2.5s;
-  }
-  
-  /* Animations to fade the snackbar in and out */
-  @-webkit-keyframes fadein {
-    from { bottom: -18px; opacity: 0; }
-    to { bottom: 12px; opacity: 1; }
-  }
-  
-  @keyframes fadein {
-    from { bottom: -18px; opacity: 0; }
-    to { bottom: 12px; opacity: 1; }
-  }
-  
-  @-webkit-keyframes fadeout {
-    from { bottom: 12px; opacity: 1; }
-    to { bottom: -18px; opacity: 0; }
-  }
-  
-  @keyframes fadeout {
-    from { bottom: 12px; opacity: 1; }
-    to { bottom: -18px; opacity: 0; }
+    transform: translateY(0);
+    opacity: 1.0;
   }
   
   /*--------- Slider animation ---------*/
@@ -130,10 +111,7 @@
   
   /*------- Images slider --------*/
   .slider-frame {
-    /* border: 1px solid red; */
     width: 100%;
-    /*margin-top: 75px;*/
-    /* height: -webkit-fill-available; */
     height: 350px;
     position: relative;
   }
@@ -146,24 +124,15 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    /*height: -webkit-fill-available;*/
   }
   
   .slides-text {
     height: fit-content;
-    /*---- custom ----*/
-    padding-left: 64px !important;
-    padding-right: 64px !important;
   }
   
   .nav-buttons {
     width: 100%;
-    bottom: 10px;
     z-index: 3;
-
-    /*---- custom ----*/
-    padding-left: 64px !important;
-    padding-right: 64px !important;
   }
   
   .img-slides .w3-animate-left,
@@ -183,8 +152,7 @@
     animation-delay: 0.7s;
     animation-fill-mode: forwards;
   }
-  .img-slides .w3-display-left,
-  .w3-display-left {
+  .img-slides .w3-display-left{
     position: absolute;
     background: rgba(0, 0, 0, 0.5);
   }

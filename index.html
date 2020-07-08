@@ -23,21 +23,28 @@
 </head>
 
 <body id="body">
+    <!-- Logo Picture -->
     <div class="logo-picture">
-        <div class="logo w3-xxlarge">P C E L A <span class="front-light bg-green-2">I N F O </span>
-            <i class="fab fa-forumbee"></i></div>
+        <div class="logo w3-xxlarge">
+            P C E L A <span class="front-light bg-green-2">I N F O </span>
+            <i class="fab fa-forumbee"></i>
+        </div>
     </div>
 
     <!-- Navbar -->
-    <div id="nav-bar" class="w3-top front-dark bg-green-2">
+    <div id="navBar" class="w3-top front-dark bg-green-2">
         <div class="nav-bar w3-bar w3-center-align w3-large front-dark bg-green-2">
             <!---------------- LOGO ---------------->
-            <a href="#" class="w3-bar-item w3-button w3-padding-16"><span class="w3-large">
+            <a href="index.html" class="w3-bar-item w3-button w3-padding-16 front-light"><span class="w3-large">
                     <i class="fab fa-forumbee"></i></span></a>
+
+            <!---------------- HOME ---------------->
+            <a href="index.html"
+                class="w3-bar-item w3-button w3-padding-16 w3-hide-small w3-hide-medium bg-green-3 w3-text-white">HOME</a>
 
             <!----------- O NAMA ----------->
             <div class="w3-dropdown-hover w3-hide-small w3-hide-medium">
-                <button class="w3-button w3-hover-theme w3-padding-16 bg-green-3 w3-text-white">
+                <button class="w3-button w3-hover-theme w3-padding-16">
                     O Nama <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="w3-dropdown-content w3-bar-block w3-card-4">
@@ -60,11 +67,14 @@
                 </div>
             </div>
             <!------------ All Posts ------------>
-            <a href="posts.html" class="w3-bar-item w3-button w3-hover-theme w3-padding-16">All
+            <a href="posts.html"
+                class="w3-bar-item w3-button w3-hover-theme w3-padding-16 w3-hide-small w3-hide-medium front-light">All
                 Posts</a>
 
             <!------------ Single Post ------------>
-            <a href="post-single.html" class="w3-bar-item w3-button w3-hover-theme w3-padding-16">Single Post</a>
+            <a href="post-single.html"
+                class="w3-bar-item w3-button w3-hover-theme w3-padding-16 w3-hide-small w3-hide-medium front-light">Single
+                Post</a>
 
             <!-- Open Sidebar - Button -->
             <a class="w3-bar-item w3-button w3-right w3-hide-large w3-large w3-padding-16" href="javascript:void(0)"
@@ -72,35 +82,43 @@
                 <i class="fa fa-bars"></i>
             </a>
             <!-------------- SEARCH BUTTON -------------->
-            <button onclick="searchShow('searchID')" class="w3-button w3-hover-theme w3-padding-16 w3-right">
+            <button onclick="searchShow('search')" class="w3-button w3-hover-theme w3-padding-16 w3-right">
                 <i class="fa fa-search"></i>
             </button>
             <!----------- Account ----------->
             <div class="w3-dropdown-hover w3-hide-small w3-hide-medium w3-right">
-                <button class="w3-button w3-hover-theme w3-padding-16">Nalog <i class="fa fa-caret-down"></i></button>
+                <button class="w3-button w3-hover-theme w3-padding-16 front-light">Nalog <i
+                        class="fa fa-caret-down"></i></button>
                 <div class="w3-dropdown-content w3-bar-block w3-card-4">
-                    <a href="login-form.html" class="w3-bar-item w3-button w3-medium w3-hover-theme">LOGIN</a>
-                    <a href="register-form.html" class="w3-bar-item w3-button w3-medium w3-hover-theme">REGISTRACIJA</a>
-                    <a href="#" class="w3-bar-item w3-button w3-medium w3-hover-theme">IZMENE</a>
+                    <a href="login-form.html"
+                        class="w3-bar-item w3-button w3-medium w3-hover-theme front-pink-2">LOGIN</a>
+                    <a href="lost-password.html"
+                        class="w3-bar-item w3-button w3-medium w3-hover-theme front-pink-2">LOZINKA</a>
+                    <a href="register-form.html"
+                        class="w3-bar-item w3-button w3-medium w3-hover-theme front-pink-2">REGISTRACIJA</a>
                     <a href="#" class="w3-bar-item w3-button w3-medium w3-hover-theme">PORUKE</a>
                     <a href="#" class="w3-bar-item w3-button w3-medium w3-hover-theme">MOJI POSTOVI</a>
                 </div>
             </div>
         </div>
         <!------------------- SEARCH FORM ------------------->
-        <div class="w3-sidebar w3-bar w3-card-4 w3-hide w3-animate-zoom" id="searchID">
-            <div class="search-title w3-section">
+        <div id="search" class="w3-sidebar w3-bar w3-card-4 w3-hide w3-animate-zoom">
+            <div class="search-title">
                 <h3 class="front-pink-2">Sadrzaj koji trazite</h3>
             </div>
             <form class="search-form" method="" action="">
                 <p><input class="w3-input w3-border w3-light-grey" type="text" autofocus></p>
-                <p class="w3-display-container">
-                    <button class="w3-button w3-margin-bottom bg-pink-1 front-green-3">Traži</button>
-                    <a href="javascript:void(0)" onclick="searchShow('searchID')"
-                        class="w3-right w3-xlarge w3-padding-large w3-border front-pink-2" title="Close">
-                        <i class="fa fa-times"></i>
-                    </a>
-                </p>
+                <div class="form-buttons">
+                    <div>
+                        <button class="w3-button w3-margin-bottom bg-pink-1 front-green-3">Traži</button>
+                    </div>
+                    <div>
+                        <a href="javascript:void(0)" onclick="searchShow('search')"
+                            class="w3-right w3-xlarge w3-padding-large w3-border front-pink-2" title="Close">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </div>
+                </div>
             </form>
         </div><!-- Search form -->
     </div><!-- id="nav-bar" -->
@@ -110,17 +128,18 @@
     <div id="overLay" class="w3-overlay w3-hide" onclick="w3_open_navbar()" title="Zatvori sidebar"></div>
 
     <!------------- Sidebar (subMenu) ------------->
-    <nav id="sideBar" class="w3-bar-block w3-theme-l5 w3-animate-left w3-hide">
+    <nav id="sideBar" class="w3-bar-block w3-theme-l5">
         <a href="javascript:void(0)" onclick="w3_open_navbar()"
             class="w3-right w3-xlarge w3-padding-large w3-hover-black" title="Zatvori">
             <i class="fa fa-times"></i>
         </a>
         <h4 class="w3-bar-item"><b>Menu</b></h4>
-        <a class="w3-bar-item w3-button w3-hover-black" href="#">O NAMA</a>
-        <a class="w3-bar-item w3-button w3-hover-black" href="#">KATEGORIJE</a>
-        <a class="w3-bar-item w3-button w3-hover-black" href="#">ALL POSTS</a>
-        <a class="w3-bar-item w3-button w3-hover-black" href="#">SINGLE POST</a>
-        <a class="w3-bar-item w3-button w3-hover-black" href="#">NALOG</a>
+        <a class="w3-bar-item w3-button w3-hover-black front-pink-2" href="index.html">HOME</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="post-single.html">SINGLE POST</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="posts.html">ALL POSTS</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="login-form.html">LOGIN</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="lost-password.html">LOZINKA</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="register-form.html">REGISRACIJA</a>
     </nav><!-- Sidebar -->
 
     <!-- frame0 -->
@@ -129,14 +148,13 @@
     <!-- frame1 -->
     <div class="frame1">
         <div class="before-content">
-
             <div class="slider-frame">
                 <div class="img-slides">
                     <img class="images" src="images/img_nature_wide.jpg" style="width:100%;" />
                     <img class="images" src="images/img_fjords_wide.jpg" style="width:100%;" />
                     <img class="images" src="images/img_mountains_wide.jpg" style="width:100%;" />
 
-                    <div class="slides-text w3-container w3-display-left w3-text-white" style="display:none;z-index:3;">
+                    <div class="slides-text w3-display-left w3-text-white" style="display:none;z-index:3;">
                         <h2 class="w3-animate-top" style="top:-300px;">
                             Title Slider 1
                         </h2>
@@ -147,7 +165,7 @@
                         </p>
                     </div>
 
-                    <div class="slides-text w3-container w3-display-left w3-text-white w3-animate-left"
+                    <div class="slides-text w3-display-left w3-text-white w3-animate-left"
                         style="left:-900px;display:none;z-index:3;">
                         <h2 class="w3-animate-left" style="left:-300px;">
                             Title Slider 2
@@ -159,7 +177,7 @@
                         </p>
                     </div>
 
-                    <div class="slides-text w3-container w3-display-left w3-text-white" style="display:none;z-index:3;">
+                    <div class="slides-text w3-display-left w3-text-white" style="display:none;z-index:3;">
                         <h2 class="w3-animate-top" style="top:-300px;">
                             Title Slider 3
                         </h2>
@@ -184,19 +202,21 @@
                             <i id="btn-play" class="fas fa-pause"></i>
                         </div>
 
-                        <span class="w3-badge w3-large w3-border w3-transparent w3-hover-black circle-mark"
+                        <span
+                            class="w3-badge w3-large w3-border w3-transparent w3-hover-black circle-mark w3-hide-small"
                             onclick="currentDiv(1)">1</span>
-                        <span class="w3-badge w3-large w3-border w3-transparent w3-hover-black circle-mark"
+                        <span
+                            class="w3-badge w3-large w3-border w3-transparent w3-hover-black circle-mark w3-hide-small"
                             onclick="currentDiv(2)">2</span>
-                        <span class="w3-badge w3-large w3-border w3-transparent w3-hover-black circle-mark"
+                        <span
+                            class="w3-badge w3-large w3-border w3-transparent w3-hover-black circle-mark w3-hide-small"
                             onclick="currentDiv(3)">3</span>
                     </div>
 
                     <!-------- Snucbnar --------->
                     <div id="sliderStatus"></div>
-                </div>
+                </div><!-- images slides -->
             </div><!-- slider-frame -->
-
         </div><!-- before-content -->
 
         <!---------------------------- Content ---------------------------->
@@ -272,20 +292,20 @@
                 </div><!-- (END) posts -->
 
                 <div class="w3-bar w3-section w3-center">
-                    <div class="w3-bar">
-                        <a class="w3-button bg-pink-2 w3-text-white">&laquo; Predhodni</a>
-                        <a href="#" class="w3-button">1</a>
-                        <a href="#" class="w3-button bg-pink-1">2</a>
-                        <a href="#" class="w3-button">3</a>
-                        <a href="#" class="w3-button">4</a>
-                        <a href="#" class="w3-button">5</a>
-                        <a class="w3-button bg-pink-2 w3-text-white">Sledeci &raquo;</a>
+                    <div class="buttons-frame">
+                        <a class="w3-button bg-pink-2 w3-text-white w3-left">&laquo; Predhodni</a>
+                        <a href="#" class="w3-button w3-hide-small">1</a>
+                        <a href="#" class="w3-button w3-hide-small bg-pink-1">2</a>
+                        <a href="#" class="w3-button w3-hide-small">3</a>
+                        <a href="#" class="w3-button w3-hide-small">4</a>
+                        <a href="#" class="w3-button w3-hide-small">5</a>
+                        <a class="w3-button bg-pink-2 w3-text-white w3-right">Sledeci &raquo;</a>
                     </div>
                 </div><!-- pagination -->
             </div><!-- content 1 -->
 
             <div class="content-2">
-                <div class="row-1">
+                <div class="row-1 row">
                     <!-- NAJNOVIJI KOMENTARI -->
                     <h4 class="bg-pink-1 w3-padding-16">Najnoviji komentari</h4>
                     <div class="new-comments w3-margin-top">
@@ -324,7 +344,7 @@
                         </div><!-- comment 3 -->
                     </div>
                 </div><!-- row 1 -->
-                <div class="row-2">
+                <div class="row-2 row">
                     <!-- KATEGORIJE -->
                     <h4 class="bg-pink-2l1 w3-text-white w3-padding-16">Kategorije</h4>
                     <div class="categories w3-margin-top">
@@ -343,7 +363,7 @@
                     </div><!-- categories -->
                 </div><!-- row 2 -->
 
-                <div class="row-3">
+                <div class="row-3 row">
                     <!-- NAJCITANIJE -->
                     <h4 class="bg-green-2l2 w3-padding-16">Najcitanije</h4>
 
@@ -384,7 +404,7 @@
                     </div><!-- most read -->
                 </div><!-- row 3 -->
 
-                <div class="row-4">
+                <div class="row-4 row">
                     <!-- Archive -->
                     <h4 class="bg-pink-1 w3-padding-16">Arhiva</h4>
                     <div class="archive w3-margin-top">
@@ -507,14 +527,14 @@
 
         <div class="footer">
             <div class="footer-row footer-row-1">
-                <div class="footer-col col-1 w3-container">
+                <div class="footer-col col-1">
                     <h4 class="w3-wide front-green-3"><b>O Nama</b></h4>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                         Officia deleniti doloribus. </p>
                     <p>Molestiae dicta, quaerat temporibus corporis!</p>
                     <button class="w3-button w3-round w3-margin-top footer-button w3-small w3-wide">Opsirnije</button>
                 </div>
-                <div class="footer-col col-2 w3-container">
+                <div class="footer-col col-2">
                     <h4 class="w3-wide front-green-3"><b>Kategorije</b></h4>
                     <ul>
                         <li><a href="#">Categorija 1</a></li>
@@ -525,7 +545,7 @@
                     <button class="w3-button w3-round w3-margin-top footer-button w3-small w3-wide">Sve
                         kategorije</button>
                 </div>
-                <div class="footer-col col-3 w3-container">
+                <div class="footer-col col-3">
                     <h4 class="w3-wide front-green-3"><b>Newsletter</b></h4>
                     <form>
                         <p>Lorem ipsum dolor sit amet</p>
@@ -533,7 +553,7 @@
                         <button class="w3-button w3-round w3-margin-top footer-button w3-small w3-wide">Sent</button>
                     </form>
                 </div>
-                <div class="footer-col col-4 w3-container">
+                <div class="footer-col col-4">
                     <h4 class="w3-wide front-green-3"><b>Pratite nas</b></h4>
                     <p>Drustvene mreze</p>
                     <div class="social-net w3-xxlarge">
