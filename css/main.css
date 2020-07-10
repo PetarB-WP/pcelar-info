@@ -1079,7 +1079,7 @@
 
 * {
   box-sizing: border-box;
-  transition: background-color 600ms, color 300ms, opacity 500ms;
+  transition: background-color 600ms, opacity 500ms;
   letter-spacing: 0.7px;
 }
 
